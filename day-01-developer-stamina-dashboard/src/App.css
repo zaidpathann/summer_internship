@@ -50,3 +50,28 @@
     padding: 15px;
     border-radius: 10px;
 }
+.zp-stamina-section{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.zp-stamina-value{
+    color: #e9c46a;
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.zp-button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.zp-button:disabled{
+    background-color: gray;
+    cursor: not-allowed;
+}
