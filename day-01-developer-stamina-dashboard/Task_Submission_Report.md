@@ -5,10 +5,10 @@
 | Field             | Details               |
 | :---------------- | :-------------------- |
 | **Student Name**  | Zaid Pathan           |
-| **Internship ID** | PRL-MERN-2026-XXXX    |
+| **Internship ID** | ND                    |
 | **Date**          | 2026-05-12            |
 | **Course Day**    | Day 1                 |
-| **GitHub Repo**   | YOUR_GITHUB_REPO_LINK |
+| **GitHub Repo**   | https://github.com/zaidpathann/summer_internship.git |
 
 ---
 
