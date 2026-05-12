@@ -28,3 +28,25 @@
 .zp-subtitle{
     color: #555;
 }
+
+.zp-skills-section{
+    margin-top: 50px;
+}
+
+.zp-section-title{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.zp-skill-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.zp-skill-badge{
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+}
