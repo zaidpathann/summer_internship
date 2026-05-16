@@ -82,7 +82,7 @@ useEffect(() => {
       }
       catch(err){
 
-         setError("Failed To Fetch Users")
+         setError("Failed To Fetch Products")
 
       }
       finally{

@@ -61,3 +61,10 @@ body{
 .zp-error{
     color:red;
 }
+
+.zp-image{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    margin-bottom:20px;
+}

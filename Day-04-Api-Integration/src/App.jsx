@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 
-import UserCard from "./components/UserCard"
+import ProductCard from "./components/ProductCard"
 
 import "./App.css"
 
 function App() {
 
-  const [users, setUsers] = useState([])
+  const [products, setProducts] = useState([])
 
   const [loading, setLoading] = useState(true)
 
@@ -17,20 +17,24 @@ function App() {
 
   useEffect(() => {
 
-    const fetchUsers = async () => {
+    const fetchProducts = async () => {
 
       try {
 
         const response = await axios.get(
-          "https://jsonplaceholder.typicode.com/users"
+          "https://fakestoreapi.com/products"
         )
 
-        setUsers(response.data)
+        console.log(response.data)
+
+        setProducts(response.data)
 
       }
       catch (err) {
 
-        setError("Failed To Fetch Users")
+        console.log(err)
+
+        setError("Failed To Fetch Products")
 
       }
       finally {
@@ -40,13 +44,15 @@ function App() {
       }
     }
 
-    fetchUsers()
+    fetchProducts()
 
   }, [])
 
-  const filteredUsers = users.filter((user) =>
+  const filteredProducts = products.filter((product) =>
 
-    user.name.toLowerCase().includes(search.toLowerCase())
+    product.title
+      .toLowerCase()
+      .includes(search.toLowerCase())
 
   )
 
@@ -60,7 +66,7 @@ function App() {
 
       <input
         type="text"
-        placeholder="Search Users..."
+        placeholder="Search Products..."
         className="zp-search"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
@@ -71,7 +77,7 @@ function App() {
         loading ?
 
           <h2 className="zp-status">
-            Loading Users...
+            Loading Products...
           </h2>
 
           :
@@ -88,11 +94,11 @@ function App() {
 
               {
 
-                filteredUsers.map((user) => (
+                filteredProducts.map((product) => (
 
-                  <UserCard
-                    key={user.id}
-                    user={user}
+                  <ProductCard
+                    key={product.id}
+                    product={product}
                   />
 
                 ))
@@ -108,4 +114,3 @@ function App() {
 }
 
 export default App
-
