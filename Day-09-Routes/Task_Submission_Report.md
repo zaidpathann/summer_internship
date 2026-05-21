@@ -78,19 +78,19 @@ This hook was used to access dynamic URL parameters and display operation-based 
 
 ## Routes
 
-![Routes](./screenshots/addRote.png)(./screenshots/subRote.png)(./screenshots/mulRote.png)(./screenshots/divRoute.png)
+![Routes](./screenshots/routes.jpg)
 
 ---
 
 ## Route Example
 
-![Addition Route](./screenshots/day-9-mul-route.png)
+![Addition Route](./screenshots/additionRoute.png)
 
 ---
 
 ## Invalid Route Handling
 
-![Invalid Route](./screenshots/day-9-invalid-route.png)
+![Invalid Route](./screenshots/invalidRoute.png)
 
 ---
 
