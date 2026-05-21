@@ -78,7 +78,7 @@ This hook was used to access dynamic URL parameters and display operation-based 
 
 ## Routes
 
-![Routes](./screenshots/day-9-add-route.png)
+![Routes](./screenshots/addRote.png)(./screenshots/subRote.png)(./screenshots/mulRote.png)(./screenshots/divRoute.png)
 
 ---
 
