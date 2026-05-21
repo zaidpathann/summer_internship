@@ -1,7 +1,7 @@
 body{
     margin:0;
     font-family:Arial, sans-serif;
-    background:#f1f5f9;
+    background:#606c38;
 }
 
 .zp-container{
@@ -13,7 +13,7 @@ body{
 
 .zp-card{
     width:450px;
-    background:white;
+    background:#fefae0;
     padding:40px;
     border-radius:20px;
     text-align:center;
