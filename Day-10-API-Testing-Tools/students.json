@@ -8,5 +8,10 @@
     "id": 2,
     "name": "Ayaan",
     "course": "React JS"
+  },
+  {
+    "id": 3,
+    "name": "Sahil",
+    "course": "MongoDB"
   }
 ]
