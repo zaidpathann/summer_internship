@@ -112,5 +112,5 @@ Maintenance
 - Understood module-based development.
 - Learned timeline allocation techniques.
 - Understood backend-first development strategy.
-- Learned software development lifecycle (SDLC).
+- Learned software development lifecycle.
 - Understood testing and deployment workflow.
