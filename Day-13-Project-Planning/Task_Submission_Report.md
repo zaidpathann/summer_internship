@@ -109,7 +109,7 @@ Example Modules:
 
 # 💡 Key Learnings
 
-* Learned Software Development Lifecycle (SDLC).
+* Learned Software Development Lifecycle.
 * Understood project planning methodologies.
 * Learned module-based development approach.
 * Understood technology stack selection process.
