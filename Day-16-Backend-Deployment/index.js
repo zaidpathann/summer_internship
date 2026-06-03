@@ -8,15 +8,19 @@ app.use(cors())
 
 app.use(
 
-"/",
+"/api",
 
-require("./routes/userRoutes")
+require(
+
+"./routes/studentRoutes"
 
 )
 
-const PORT =
+)
 
-process.env.PORT ||
+const PORT=
+
+process.env.PORT||
 
 5000
 
@@ -28,7 +32,7 @@ PORT,
 
 console.log(
 
-`Server Running ${PORT}`
+`Server Running On ${PORT}`
 
 )
 
