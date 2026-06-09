@@ -181,7 +181,7 @@ This logic was used to calculate the final payable amount after applying all dis
 
 ---
 
-# 🔗 Live Preview (If applicable)
+# 🔗 Live Preview 
 
 summer-internship-final-project.vercel.app
 
