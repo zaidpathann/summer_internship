@@ -1,209 +1,191 @@
-📑 Final Internship Assignment – Task Submission Report
+# 📑 Final Task Submission Report
 
-MERN Stack Internship | Prelytix Private Limited
+**MERN Stack Internship | Prelytix Private Limited**
 
-Field| Details
-Student Name| Zaid Pathan
-Internship ID| ND
-Assignment Title| Smart Cart System
-Submission Date| 2026-06-09
-GitHub Repo| https://github.com/zaidpathann/summer_internship.git
-Live Project URL| summer-internship-final-project.vercel.app
-
----
-
-🎯 Objective
-
-To design and develop a Smart Cart System using React by implementing product browsing, cart management, checkout flow, discount calculations, reusable components, and optimized application architecture.
+| Field             | Details               |
+| :---------------- | :-------------------- |
+| **Student Name**  | Zaid Pathan           |
+| **Internship ID** | PRL-MERN-2026-XXXX    |
+| **Date**          | 2026-06-09            |
+| **Course Day**    | Day 20                |
+| **GitHub Repo**   | https://github.com/zaidpathann/summer_internship.git |
+| **Live URL**      | summer-internship-final-project.vercel.app |
 
 ---
 
-🛠️ Features Implemented
+# 🎯 Daily Objective
 
-Product Listing
-
-- Displayed products using local JSON data.
-- Implemented responsive product cards.
-- Displayed product image, name, price, and stock.
-- Prevented adding unavailable products.
+> Develop and deploy a complete frontend application by implementing product browsing, cart management, checkout workflow, business logic, reusable components, and production deployment.
 
 ---
 
-Cart Management
+# 🛠️ Implementation & Changes (Self-Documentation)
 
-- Added products into cart.
+## 1. New Features / Logic Implemented
 
-- Implemented quantity increase and decrease.
+* **What:** Built and deployed a Smart Cart System using React.
 
-- Added remove item functionality.
+* **How:**
 
-- Restricted quantity:
-  
-  - Maximum: 10
-  - Minimum: 1
+  * Created product listing using local JSON data.
+  * Implemented shopping cart management using Context API.
+  * Added quantity controls and cart validations.
+  * Implemented checkout page with discount calculations.
+  * Added custom business logic for discount handling.
+  * Used React Router for multi-page navigation.
+  * Implemented lazy loading using React Lazy and Suspense.
+  * Added Local Storage for persistent cart state.
+  * Deployed final application successfully.
 
-- Displayed badge when quantity reached 5 or more.
+* **Why:**
+
+  * To understand real-world frontend architecture, state management, and deployment workflow.
 
 ---
 
-Checkout System
+## 2. UI / UX Enhancements
 
-Implemented complete checkout flow:
+* Implemented professional green and white theme.
+* Created reusable UI components.
+* Added responsive product cards.
+* Added search and sorting functionality.
+* Implemented dark mode support.
+* Improved user navigation and checkout experience.
 
-- Cart Summary
-- Total Amount
-- Discount Calculation
-- Final Payable Amount
+---
 
-Applied Discount Rules:
+## 3. Application Features Implemented
 
-- 10% discount on products with quantity ≥ 3
-- Additional 5% discount on cart value above ₹5000
-- Custom Rule:
+Implemented pages:
+
+* Products Page
+* Cart Page
+* Checkout Page
+
+Implemented functionalities:
+
+* Product Listing
+* Add To Cart
+* Quantity Management
+* Remove Item
+* Checkout Summary
+* Discount Calculations
+* Persistent Cart
+
+Implemented Discount Rules:
+
+* Product Discount (10%)
+* Cart Discount (5%)
+* Custom Discount:
   Cheapest Item 50% Off
 
 ---
 
-Additional Enhancements
+# 💻 Code Snippet: My Primary Contribution
 
-- Search Functionality
-- Product Sorting
-- Dark Mode
-- Lazy Loading
-- Context API State Management
-- Persistent Cart using Local Storage
-- Professional Responsive UI
+```js
+const finalAmount =
 
----
+subtotal
 
-🧩 Component Architecture
+-
 
-Reusable components created:
+productDiscount
 
-- Navbar
-- Product Card
-- Cart Item
-- Badge
-- Loader
+-
 
-Application Pages:
+cheapestDiscount
 
-- Products
-- Cart
-- Checkout
+-
+
+cartDiscount
+```
+
+This logic was used to calculate the final payable amount after applying all discount conditions.
 
 ---
 
-💻 Technologies Used
+# 📸 Screenshots / Proof of Work
 
-Frontend
+## Product Listing Page
 
-- React
-- Vite
-- React Router
-
-State Management
-
-- Context API
-
-Styling
-
-- CSS
-
-Deployment
-
-- Vercel
+![Products](./screenshots/listing.png)
 
 ---
 
-📸 Screenshots / Proof of Work
+## Cart Page
 
-Product Listing Page
-
-"Products" (./screenshots/listing.png)
+![Cart](./screenshots/Cart.png)
 
 ---
 
-Cart Page
+## Checkout Page
 
-"Cart" (./screenshots/Cart.png)
-
----
-
-Checkout Page
-
-"Checkout" (./screenshots/Checkout.png)
+![Checkout](./screenshots/Checkout.png)
 
 ---
 
-Discount Calculation
+## Discount Calculation
 
-"Discount" (./screenshots/Discount.png)
-
----
-
-Final Deployed Website
-
-"Deployment" (./screenshots/HomePage.png)
+![Discount](./screenshots/Discount.png)
 
 ---
 
-🛑 Challenges Faced & Solutions
+## Final Deployed Website
 
-Problem
-
-Managing multiple discount conditions simultaneously.
-
-Solution
-
-Created centralized discount calculation logic and optimized checkout flow.
+![Deployment](./screenshots/HomePage.png)
 
 ---
 
-Problem
+# 🛑 Challenges Faced & Solutions
 
-Maintaining cart state after page refresh.
+## Problem
 
-Solution
+* Managing multiple discount rules and maintaining calculation order.
 
-Implemented Local Storage integration.
+## Solution
 
----
-
-Problem
-
-Managing application structure.
-
-Solution
-
-Implemented reusable component architecture and Context API.
+* Created centralized discount utility for all business calculations.
 
 ---
 
-💡 Key Learnings
+## Problem
 
-- React Component Design
-- Context API
-- State Management
-- React Router
-- Business Logic Implementation
-- Discount Calculation
-- Lazy Loading
-- Component Reusability
-- Frontend Deployment
-- Production Optimization
+* Preserving cart state after refresh.
+
+## Solution
+
+* Implemented Local Storage for persistent data.
 
 ---
 
-🔗 Final Submission
+## Problem
 
-Repository Link:
-https://github.com/zaidpathann/summer_internship.git
+* Managing application state across multiple pages.
 
-Live URL:
+## Solution
+
+* Used Context API for centralized state management.
+
+---
+
+# 💡 Key Learnings
+
+* Learned React Router implementation.
+* Learned Context API state management.
+* Learned reusable component architecture.
+* Learned business logic implementation.
+* Learned lazy loading optimization.
+* Learned cart and checkout workflow.
+* Learned frontend deployment process.
+
+---
+
+# 🔗 Live Preview (If applicable)
+
 summer-internship-final-project.vercel.app
 
 ---
 
-Signature:
+**Signature:**
 Zaid Pathan
