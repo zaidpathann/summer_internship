@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { toast } from "react-toastify";
 
 function ProductCard({ product }) {
   const { addToCart } = useContext(CartContext);
@@ -19,7 +20,12 @@ function ProductCard({ product }) {
         </>
       ) : (
         /* ✅ Fixed: Wrapped the arrow function in curly braces */
-        <button onClick={() => addToCart(product)}>Add To Cart</button>
+        <button onClick={() => {
+          addToCart(product);
+          toast.success(`${product.name} added to cart!`);
+        }}>
+          Add To Cart
+        </button>
       )}
     </div>
   );

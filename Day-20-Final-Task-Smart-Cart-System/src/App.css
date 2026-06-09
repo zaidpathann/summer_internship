@@ -261,3 +261,67 @@ border-radius:12px;
 font-size:18px;
 
 }
+
+.toolbar{
+
+display:flex;
+
+gap:15px;
+
+margin-bottom:30px;
+
+}
+
+.toolbar input,
+
+.toolbar select{
+
+padding:15px;
+
+border:1px solid #dfe7df;
+
+border-radius:10px;
+
+}
+
+.mode{
+
+background:none;
+
+border:none;
+
+font-size:22px;
+
+}
+
+.dark{
+
+background:#101712;
+
+color:white;
+
+}
+
+.dark .navbar{
+
+background:#182019;
+
+}
+
+.dark .card{
+
+background:#172219;
+
+}
+
+.dark .summary{
+
+background:#172219;
+
+}
+
+.dark .cart-item{
+
+background:#172219;
+
+}

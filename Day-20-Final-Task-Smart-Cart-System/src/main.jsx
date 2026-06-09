@@ -1,5 +1,4 @@
 import React from "react";
-
 import ReactDOM from "react-dom/client";
 
 import App from "./App";
@@ -8,10 +7,14 @@ import "./App.css";
 
 import { CartProvider } from "./context/CartContext";
 
-ReactDOM.createRoot(document.getElementById("root"))
+import { ToastContainer } from "react-toastify";
 
-  .render(
-    <CartProvider>
-      <App />
-    </CartProvider>,
-  );
+import "react-toastify/dist/ReactToastify.css";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <CartProvider>
+    <App />
+
+    <ToastContainer />
+  </CartProvider>,
+);
