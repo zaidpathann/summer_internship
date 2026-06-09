@@ -1,16 +1,65 @@
-# React + Vite
+# Smart Cart System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+Smart Cart System is a React-based e-commerce application that allows users to browse products, manage shopping cart items, and complete checkout with discount calculations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features Implemented
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Product Listing
+- Add To Cart
+- Cart Management
+- Quantity Validation
+- Checkout Page
+- Product Discount
+- Cart Discount
+- Cheapest Item 50% Off
+- Search Products
+- Sort Products
+- Dark Mode
+- Lazy Loading
+- Context API
+- Local Storage
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Assumptions Made
+
+- Products are loaded from local JSON.
+- Checkout is simulated.
+- Discounts are applied sequentially.
+
+---
+
+## Challenges Faced
+
+- Managing discount calculation.
+- Handling cart persistence.
+- Lazy loading optimization.
+
+---
+
+## Known Issues
+
+- No payment gateway.
+- No admin panel.
+
+---
+
+## Future Improvements
+
+- Backend Integration
+- Payment System
+- User Authentication
+- Product Categories
+
+---
+
+## Tech Stack
+
+- React
+- React Router
+- Context API
+- Vite
