@@ -59,7 +59,10 @@ function Checkout() {
             <div>₹{Math.round(finalAmount)}</div>
           </div>
 
-          <button className="pay">Proceed To Pay</button>
+          <button className="pay" onClick={() => alert("Payment Successful! Thank you for shopping with us.")}>
+            Proceed To Pay
+          </button>
+            
         </>
       )}
     </div>
