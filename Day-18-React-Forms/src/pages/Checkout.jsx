@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import { CartContext } from "../context/CartContext";
 
@@ -9,15 +9,44 @@ function Checkout() {
 
   const {
     subtotal,
-
     productDiscount,
-
     cheapestDiscount,
-
     cartDiscount,
-
     finalAmount,
   } = calculateCheckout(cart);
+
+  const [form, setForm] = useState({
+    name: "",
+
+    email: "",
+
+    mobile: "",
+
+    address: "",
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!form.name || !form.email || !form.mobile || !form.address) {
+      alert("Please fill all fields");
+
+      return;
+    }
+    console.log("Order Details:", form)
+
+    setSubmitted(true);
+  };
 
   return (
     <div className="container">
@@ -27,42 +56,70 @@ function Checkout() {
         <p>Cart Empty</p>
       ) : (
         <>
+          <form className="checkout-form" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              value={form.name}
+              onChange={handleChange}
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={form.email}
+              onChange={handleChange}
+            />
+
+            <input
+              type="text"
+              name="mobile"
+              placeholder="Mobile Number"
+              value={form.mobile}
+              onChange={handleChange}
+            />
+
+            <textarea
+              name="address"
+              placeholder="Address"
+              value={form.address}
+              onChange={handleChange}
+            />
+
+            <button>Place Order</button>
+          </form>
+
+          {submitted && (
+            <div className="success">Order Submitted Successfully</div>
+          )}
+
           <div className="summary">
-            <div>Subtotal</div>
+            <span>Subtotal</span>
 
-            <div>₹{subtotal}</div>
+            <span>₹{subtotal}</span>
           </div>
 
           <div className="summary">
-            <div>Product Discount</div>
+            <span>Product Discount</span>
 
-            <div>− ₹{Math.round(productDiscount)}</div>
+            <span>− ₹{Math.round(productDiscount)}</span>
           </div>
 
           <div className="summary">
-            <div>Cheapest Item 50% Off</div>
+            <span>Cheapest Discount</span>
 
-            <div>− ₹{Math.round(cheapestDiscount)}</div>
+            <span>− ₹{Math.round(cheapestDiscount)}</span>
           </div>
 
           <div className="summary">
-            <div>Cart Discount</div>
+            <span>Cart Discount</span>
 
-            <div>− ₹{Math.round(cartDiscount)}</div>
+            <span>− ₹{Math.round(cartDiscount)}</span>
           </div>
 
-          <hr />
-
-          <div className="final">
-            <div>Final Amount</div>
-
-            <div>₹{Math.round(finalAmount)}</div>
-          </div>
-
-          <button className="pay" onClick={() => alert("Payment Successful! Thank you for shopping with us.")}>
-            Proceed To Pay
-          </button>
-            
+          <div className="final">Final Amount ₹{Math.round(finalAmount)}</div>
         </>
       )}
     </div>
