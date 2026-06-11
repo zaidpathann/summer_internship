@@ -1,4 +1,4 @@
-# 📑 Final Task Submission Report
+# 📑 Day 19 Task Submission Report
 
 **MERN Stack Internship | Prelytix Private Limited**
 
@@ -6,16 +6,15 @@
 | :---------------- | :-------------------- |
 | **Student Name**  | Zaid Pathan           |
 | **Internship ID** | ND    |
-| **Date**          | 2026-06-09            |
-| **Course Day**    | Day 20                |
+| **Date**          | 2026-06-06            |
+| **Course Day**    | Day 18                |
 | **GitHub Repo**   | https://github.com/zaidpathann/summer_internship.git |
-| **Live URL**      | summer-internship-final-project.vercel.app |
 
 ---
 
 # 🎯 Daily Objective
 
-> Develop and deploy a complete frontend application by implementing product browsing, cart management, checkout workflow, business logic, reusable components, and production deployment.
+> Understand and implement React Forms by integrating form handling, state management, validation, and event handling into an existing React application.
 
 ---
 
@@ -23,117 +22,89 @@
 
 ## 1. New Features / Logic Implemented
 
-* **What:** Built and deployed a Smart Cart System using React.
+* **What:** Integrated React Forms into the existing Smart Cart System.
 
 * **How:**
 
-  * Created product listing using local JSON data.
-  * Implemented shopping cart management using Context API.
-  * Added quantity controls and cart validations.
-  * Implemented checkout page with discount calculations.
-  * Added custom business logic for discount handling.
-  * Used React Router for multi-page navigation.
-  * Implemented lazy loading using React Lazy and Suspense.
-  * Added Local Storage for persistent cart state.
-  * Deployed final application successfully.
+  * Added checkout form inside Checkout page.
+  * Created controlled form components using React state.
+  * Managed input values using `useState`.
+  * Implemented `onChange` event handling.
+  * Implemented `onSubmit` form submission handling.
+  * Added form validation for empty fields.
+  * Displayed entered user data in browser console after submission.
 
 * **Why:**
 
-  * To understand real-world frontend architecture, state management, and deployment workflow.
+  * To understand real-world React form handling and user input management.
 
 ---
 
-## 2. UI / UX Enhancements
+## 2. React Concepts Implemented
 
-* Implemented professional green and white theme.
-* Created reusable UI components.
-* Added responsive product cards.
-* Added search and sorting functionality.
-* Implemented dark mode support.
-* Improved user navigation and checkout experience.
+Implemented:
+
+* Controlled Components
+* useState Hook
+* Form Handling
+* Event Handling
+* Form Validation
+* State Updates
+* Conditional Rendering
 
 ---
 
-## 3. Application Features Implemented
+## 3. Application Updates
 
-Implemented pages:
+Modified:
 
-* Products Page
-* Cart Page
 * Checkout Page
+* Form Submission Flow
+* User Input Handling
 
-Implemented functionalities:
+Added Form Fields:
 
-* Product Listing
-* Add To Cart
-* Quantity Management
-* Remove Item
-* Checkout Summary
-* Discount Calculations
-* Persistent Cart
+* Full Name
+* Email
+* Mobile Number
+* Address
 
-Implemented Discount Rules:
+Implemented Functionalities:
 
-* Product Discount (10%)
-* Cart Discount (5%)
-* Custom Discount:
-  Cheapest Item 50% Off
+* Input Capture
+* Validation
+* Console Output
+* Success Message
 
 ---
 
 # 💻 Code Snippet: My Primary Contribution
 
 ```js
-const finalAmount =
+const handleSubmit = (e) => {
 
-subtotal
+e.preventDefault()
 
--
+console.log(
 
-productDiscount
+"Order Details:",
 
--
+form
 
-cheapestDiscount
+)
 
--
-
-cartDiscount
+}
 ```
 
-This logic was used to calculate the final payable amount after applying all discount conditions.
+This logic was used to capture and display submitted form data through React form handling.
 
 ---
 
 # 📸 Screenshots / Proof of Work
 
-## Product Listing Page
+## Checkout Form UI
 
-![Products](./screenshots/listing.png)
-
----
-
-## Cart Page
-
-![Cart](./screenshots/Cart.png)
-
----
-
-## Checkout Page
-
-![Checkout](./screenshots/Checkout.png)
-
----
-
-## Discount Calculation
-
-![Discount](./screenshots/Discount.png)
-
----
-
-## Final Deployed Website
-
-![Deployment](./screenshots/HomePage.png)
+![React Form](./screenshots/checkoutForm.png)
 
 ---
 
@@ -141,49 +112,50 @@ This logic was used to calculate the final payable amount after applying all dis
 
 ## Problem
 
-* Managing multiple discount rules and maintaining calculation order.
+* Managing multiple input fields and updating values dynamically.
 
 ## Solution
 
-* Created centralized discount utility for all business calculations.
+* Implemented controlled components using `useState`.
 
 ---
 
 ## Problem
 
-* Preserving cart state after refresh.
+* Handling form submission without page refresh.
 
 ## Solution
 
-* Implemented Local Storage for persistent data.
+* Used `preventDefault()` and custom submit handling.
 
 ---
 
 ## Problem
 
-* Managing application state across multiple pages.
+* Managing validation before processing data.
 
 ## Solution
 
-* Used Context API for centralized state management.
+* Added field validation and conditional checks.
 
 ---
 
 # 💡 Key Learnings
 
-* Learned React Router implementation.
-* Learned Context API state management.
-* Learned reusable component architecture.
-* Learned business logic implementation.
-* Learned lazy loading optimization.
-* Learned cart and checkout workflow.
-* Learned frontend deployment process.
+* Learned React Forms.
+* Learned Controlled Components.
+* Learned Event Handling.
+* Learned Form Validation.
+* Learned useState for Forms.
+* Learned Input Management.
+* Learned Submit Handling.
+* Learned React Application Enhancement.
 
 ---
 
 # 🔗 Live Preview 
 
-summer-internship-final-project.vercel.app
+[Deployed URL](react-forms-ashy.vercel.app)
 
 ---
 
